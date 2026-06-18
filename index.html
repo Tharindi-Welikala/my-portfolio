@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tharindi Welikala | Software Engineering Undergraduate</title>
+  <meta name="description" content="Software Engineering undergraduate specialising in full-stack web, mobile, and software applications.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">TW.</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="live-clock"><span class="loc">CMB</span><span id="clk">--:--:--</span></div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <h1>Tharindi<br>Welikala</h1>
+    <div class="hero-meta">
+      <div>
+        <div class="meta-label">Status</div>
+        <div class="meta-value">Software Engineering Undergraduate<br>Kingston University</div>
+      </div>
+      <div>
+        <div class="meta-label">Location</div>
+        <div class="meta-value">Padukka, Colombo<br>Sri Lanka</div>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a href="mailto:tharindiwelikala27@gmail.com" class="icon-btn" title="Email">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="1.5"/><polyline points="1,3 8,9 15,3"/></svg>
+      </a>
+      <a href="https://github.com/Tharindi-Welikala" target="_blank" class="icon-btn" title="GitHub">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/tharindi-welikala" target="_blank" class="icon-btn" title="LinkedIn">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+      </a>
+      <a href="https://drive.google.com/file/d/1qtvGJcrrnZ0NFqEBDz845qZKR4vzKhr0/view?usp=sharing" class="dl-btn" target="_blank">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1v9M5 7l3 3 3-3M2 12v2a1 1 0 001 1h10a1 1 0 001-1v-2"/></svg>
+        Download Resume
+      </a>
+    </div>
+  </div>
+  <!-- PHOTO: uncomment below to show profile picture
+  <div class="hero-right">
+    <div class="photo-frame">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      <span>Add your photo here</span>
+    </div>
+  </div>
+  -->
+</section>
+
+<!-- ABOUT -->
+<section class="page-section" id="about">
+  <div class="eyebrow">About</div>
+  <h2 class="sh">Building things<br><em>that work.</em></h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm a Software Engineering undergraduate with a <strong>passion for developing</strong> innovative web, mobile, and software solutions.
+        Skilled in technologies such as Java, Python, .NET, Flutter, C#, JavaScript, and SQL,
+        I enjoy building applications that solve real-world problems while continuously learning and growing as a developer.
+      </p>
+      <p>My goal is to <strong>create impactful software</strong> that combines functionality, performance, and a great user experience.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="page-section" id="projects">
+  <div class="eyebrow">Projects</div>
+  <h2 class="sh">What I've<br><em>built.</em></h2>
+  <div class="proj-carousel-wrap">
+    <div class="proj-carousel" id="projCarousel">
+
+      <div class="proj-card">
+        <div class="proj-card-header">
+          <span class="proj-card-num">01</span>
+          <span class="proj-card-type">ML · Web</span>
+        </div>
+        <div class="proj-card-name">Fake News Detection System</div>
+        <p class="proj-card-desc">A web platform that uses machine learning and NLP to classify news articles as genuine or fake in real time. Built a Logistic Regression model with data preprocessing, feature extraction, and evaluation pipelines — integrated into a live Django web app.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">Python</span><span class="ptag">Django</span><span class="ptag">Logistic Regression</span><span class="ptag">NLP</span><span class="ptag">scikit-learn</span>
+        </div>
+        <div class="proj-card-footer">
+          <a href="https://github.com/Tharindi-Welikala/fake-news-detection-system" target="_blank" class="proj-view-btn">
+            View Project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M6 1l5 5-5 5"/></svg>
+          </a>
+          <a href="https://github.com/Tharindi-Welikala/fake-news-detection-system" target="_blank" class="proj-gh-sm" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-header">
+          <span class="proj-card-num">02</span>
+          <span class="proj-card-type">Full-Stack</span>
+        </div>
+        <div class="proj-card-name">Full-Stack E-Commerce Platform</div>
+        <p class="proj-card-desc">A complete MERN stack cosmetics store — secure user authentication, product catalog management, shopping cart, and order processing. RESTful APIs connect a MongoDB backend to a fully responsive React frontend.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">MongoDB</span><span class="ptag">Express.js</span><span class="ptag">React</span><span class="ptag">Node.js</span><span class="ptag">MERN</span>
+        </div>
+        <div class="proj-card-footer">
+          <a href="https://github.com/Tharindi-Welikala/cosmicbeauty" target="_blank" class="proj-view-btn">
+            View Project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M6 1l5 5-5 5"/></svg>
+          </a>
+          <a href="https://github.com/Tharindi-Welikala/cosmicbeauty" target="_blank" class="proj-gh-sm" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-header">
+          <span class="proj-card-num">03</span>
+          <span class="proj-card-type">Full-Stack</span>
+        </div>
+        <div class="proj-card-name">Online Bus Reservation System</div>
+        <p class="proj-card-desc">A full-stack reservation platform with route selection, seat booking, and reservation management. Applied data structures including queues, stacks, sorting algorithms, and graph-based route recommendations. Secured with JWT and bcrypt.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">React</span><span class="ptag">TypeScript</span><span class="ptag">Node.js</span><span class="ptag">SQLite</span><span class="ptag">JWT</span><span class="ptag">bcrypt</span>
+        </div>
+        <div class="proj-card-footer">
+          <a href="https://github.com/Tharindi-Welikala/routis-online-bus-reservation-system" target="_blank" class="proj-view-btn">
+            View Project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M6 1l5 5-5 5"/></svg>
+          </a>
+          <a href="https://github.com/Tharindi-Welikala/routis-online-bus-reservation-system" target="_blank" class="proj-gh-sm" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-header">
+          <span class="proj-card-num">04</span>
+          <span class="proj-card-type">Desktop</span>
+        </div>
+        <div class="proj-card-name">Production Management System</div>
+        <p class="proj-card-desc">A Windows Forms desktop application to streamline film production workflow management. Built with layered OOP architecture, CRUD operations, and SQL Server integration for production records, inventory, and operational tracking.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">C#</span><span class="ptag">.NET Framework</span><span class="ptag">SQL Server</span><span class="ptag">Windows Forms</span><span class="ptag">OOP</span>
+        </div>
+        <div class="proj-card-footer">
+          <a href="https://github.com/Tharindi-Welikala/QuietAtticFilms_Production_Management_System" target="_blank" class="proj-view-btn">
+            View Project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M6 1l5 5-5 5"/></svg>
+          </a>
+          <a href="https://github.com/Tharindi-Welikala/QuietAtticFilms_Production_Management_System" target="_blank" class="proj-gh-sm" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-header">
+          <span class="proj-card-num">05</span>
+          <span class="proj-card-type">Mobile</span>
+        </div>
+        <div class="proj-card-name">HealthMate Mobile App</div>
+        <p class="proj-card-desc">A cross-platform Flutter app for recording and tracking personal health information. Intuitive interfaces for health record management and data visualisation, with full offline capability through local SQLite persistence and proper state management.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">Flutter</span><span class="ptag">Dart</span><span class="ptag">SQLite</span><span class="ptag">SQFLite</span><span class="ptag">Cross-platform</span>
+        </div>
+        <div class="proj-card-footer">
+          <a href="https://github.com/Tharindi-Welikala/Mobile-Application-Development-HealthMate-Flutter-App" target="_blank" class="proj-view-btn">
+            View Project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M6 1l5 5-5 5"/></svg>
+          </a>
+          <a href="https://github.com/Tharindi-Welikala/Mobile-Application-Development-HealthMate-Flutter-App" target="_blank" class="proj-gh-sm" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="proj-card">
+        <div class="proj-card-header">
+          <span class="proj-card-num">06</span>
+          <span class="proj-card-type">Desktop</span>
+        </div>
+        <div class="proj-card-name">Payroll Management System</div>
+        <p class="proj-card-desc">A desktop payroll management application built to automate employee record management, salary calculations, and payroll processing. Provides secure storage of employee data, automated salary computation, and reporting features through a Windows Forms interface connected to a SQL Server database.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">C#</span><span class="ptag">.NET Framework 4.7.2</span><span class="ptag">Windows Forms</span><span class="ptag">SQL Server LocalDB</span><span class="ptag">CRUD</span>
+        </div>
+        <div class="proj-card-footer">
+          <a href="https://github.com/Tharindi-Welikala/grifindo-payroll-system" target="_blank" class="proj-view-btn">
+            View Project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M6 1l5 5-5 5"/></svg>
+          </a>
+          <a href="https://github.com/Tharindi-Welikala/grifindo-payroll-system" target="_blank" class="proj-gh-sm" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-header">
+          <span class="proj-card-num">07</span>
+          <span class="proj-card-type">CLI · Data</span>
+        </div>
+        <div class="proj-card-name">Sales Analysis System</div>
+        <p class="proj-card-desc">A command-line application designed to analyze monthly sales data and generate business insights. Built using SOLID design principles, the system processes sales records, calculates key performance metrics, and produces analytical reports to support data-driven decision-making.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">Python</span><span class="ptag">OOP</span><span class="ptag">SOLID Principles</span><span class="ptag">Data Analysis</span><span class="ptag">CLI</span><span class="ptag">Report Generation</span>
+        </div>
+        <div class="proj-card-footer">
+          <a href="https://github.com/Tharindi-Welikala/SampathFoodCity-sales-analysis-system" target="_blank" class="proj-view-btn">
+            View Project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M6 1l5 5-5 5"/></svg>
+          </a>
+          <a href="https://github.com/Tharindi-Welikala/SampathFoodCity-sales-analysis-system" target="_blank" class="proj-gh-sm" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-header">
+          <span class="proj-card-num">08</span>
+          <span class="proj-card-type">CLI · Java</span>
+        </div>
+        <div class="proj-card-name">Eco-Ride Car Rental System</div>
+        <p class="proj-card-desc">A command-line vehicle rental management application that streamlines customer registration, vehicle inventory management, and rental transactions. Developed using OOP principles to handle bookings, vehicle availability tracking, and rental record management efficiently.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">Java</span><span class="ptag">OOP</span><span class="ptag">Collections Framework</span><span class="ptag">CLI</span><span class="ptag">File Handling</span>
+        </div>
+        <div class="proj-card-footer">
+          <a href="https://github.com/Tharindi-Welikala/EcoRide_car_rental_system" target="_blank" class="proj-view-btn">
+            View Project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M6 1l5 5-5 5"/></svg>
+          </a>
+          <a href="https://github.com/Tharindi-Welikala/EcoRide_car_rental_system" target="_blank" class="proj-gh-sm" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-header">
+          <span class="proj-card-num">09</span>
+          <span class="proj-card-type">CLI · Java</span>
+        </div>
+        <div class="proj-card-name">Smart Library Management System</div>
+        <p class="proj-card-desc">A command-line library management application developed to manage book inventories, member records, and borrowing operations. Supports searching, issuing, returning, and updating book records while applying OOP design principles and efficient data management techniques.</p>
+        <div class="proj-card-tags">
+          <span class="ptag">Java</span><span class="ptag">OOP</span><span class="ptag">Collections Framework</span><span class="ptag">CLI</span><span class="ptag">Inventory Tracking</span>
+        </div>
+        <div class="proj-card-footer">
+          <a href="https://github.com/Tharindi-Welikala/smart-library-management-system" target="_blank" class="proj-view-btn">
+            View Project <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6h10M6 1l5 5-5 5"/></svg>
+          </a>
+          <a href="https://github.com/Tharindi-Welikala/smart-library-management-system" target="_blank" class="proj-gh-sm" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div><!-- end .proj-carousel -->
+
+    <div class="proj-carousel-controls">
+      <div class="proj-carousel-dots" id="projDots"></div>
+      <div class="proj-carousel-arrows">
+        <button class="proj-arrow" id="projPrev" aria-label="Previous">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 2L4 7l5 5"/></svg>
+        </button>
+        <button class="proj-arrow" id="projNext" aria-label="Next">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 2l5 5-5 5"/></svg>
+        </button>
+      </div>
+    </div>
+  </div><!-- end .proj-carousel-wrap -->
+</section>
+
+<!-- STACK -->
+<section class="page-section" id="stack">
+  <div class="stack-sticky">
+    <div class="eyebrow">Stack</div>
+    <h2 class="sh">What I<br>build<br><em>with.</em></h2>
+    <p>Learned by building.<br>Not just imported.</p>
+  </div>
+
+  <div class="stack-rows">
+
+    <!-- Languages -->
+    <div class="stack-row">
+      <div class="stack-row-label">Languages</div>
+      <div class="icon-grid">
+        <div class="si"><div class="si-icon"><i class="devicon-typescript-plain colored"></i></div><div class="si-name">TypeScript</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-javascript-plain colored"></i></div><div class="si-name">JavaScript</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-python-plain colored"></i></div><div class="si-name">Python</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-java-plain colored"></i></div><div class="si-name">Java</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-csharp-plain colored"></i></div><div class="si-name">C#</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-dart-plain colored"></i></div><div class="si-name">Dart</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-html5-plain colored"></i></div><div class="si-name">HTML / CSS</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-postgresql-plain colored"></i></div><div class="si-name">SQL</div></div>
+      </div>
+    </div>
+
+    <!-- Frameworks & Libraries -->
+    <div class="stack-row">
+      <div class="stack-row-label">Frameworks &amp;<br>Libraries</div>
+      <div class="icon-grid">
+        <div class="si"><div class="si-icon"><i class="devicon-react-original colored"></i></div><div class="si-name">React</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-nodejs-plain colored"></i></div><div class="si-name">Node.js</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-django-plain colored"></i></div><div class="si-name">Django</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-express-original"></i></div><div class="si-name">Express.js</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-flutter-plain colored"></i></div><div class="si-name">Flutter</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-dot-net-plain colored"></i></div><div class="si-name">.NET</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-bootstrap-plain colored"></i></div><div class="si-name">Bootstrap</div></div>
+      </div>
+    </div>
+
+    <!-- Databases & Tools -->
+    <div class="stack-row">
+      <div class="stack-row-label">Databases &amp;<br>Tools</div>
+      <div class="icon-grid">
+        <div class="si"><div class="si-icon"><i class="devicon-mongodb-plain colored"></i></div><div class="si-name">MongoDB</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-mysql-plain colored"></i></div><div class="si-name">MySQL</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-microsoftsqlserver-plain colored"></i></div><div class="si-name">SQL Server</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-sqlite-plain colored"></i></div><div class="si-name">SQLite</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-git-plain colored"></i></div><div class="si-name">Git</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-postman-plain colored"></i></div><div class="si-name">Postman</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-figma-plain colored"></i></div><div class="si-name">Figma</div></div>
+        <div class="si"><div class="si-icon"><i class="devicon-vscode-plain colored"></i></div><div class="si-name">VS Code</div></div>
+      </div>
+    </div>
+
+  </div><!-- end stack-rows -->
+</section>
+
+<!-- EDUCATION -->
+<section class="page-section" id="education">
+  <div class="eyebrow">Education</div>
+  <h2 class="sh">The<br><em>path so far.</em></h2>
+
+  <div class="edu-timeline">
+
+    <!-- Entry 1 — card on RIGHT -->
+    <div class="edu-entry">
+      <div class="edu-spacer"></div>
+      <div class="edu-spacer"></div>
+      <div class="edu-card-right">
+        <div class="edu-card">
+          <div class="edu-period">2025 – Present</div>
+          <div class="edu-degree">BSc (Hons) Software Engineering</div>
+          <div class="edu-school">Kingston University, London</div>
+          <span class="edu-badge">Expected Sep 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Entry 2 — card on LEFT -->
+    <div class="edu-entry">
+      <div class="edu-card-left">
+        <div class="edu-card">
+          <div class="edu-period">Jun 2023 – Dec 2024</div>
+          <div class="edu-degree">Pearson BTEC HND in Computing</div>
+          <div class="edu-school">ESOFT Metro Campus, Nugegoda</div>
+          <span class="edu-badge done">Completed Dec 2024</span>
+        </div>
+      </div>
+      <div class="edu-spacer"></div>
+      <div class="edu-spacer"></div>
+    </div>
+
+    <!-- Entry 3 — card on RIGHT -->
+    <div class="edu-entry">
+      <div class="edu-spacer"></div>
+      <div class="edu-spacer"></div>
+      <div class="edu-card-right">
+        <div class="edu-card">
+          <div class="edu-period">Mar 2023 – Feb 2024</div>
+          <div class="edu-degree">Diploma in Information Technology (DITEC)</div>
+          <div class="edu-school">ESOFT Metro Campus, Nugegoda</div>
+          <span class="edu-badge done">Completed</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Entry 4 — card on LEFT -->
+    <div class="edu-entry">
+      <div class="edu-card-left">
+        <div class="edu-card">
+          <div class="edu-period">Mar – Sep 2023</div>
+          <div class="edu-degree">Certificate in Information Technology</div>
+          <div class="edu-school">ESOFT Metro Campus, Nugegoda</div>
+          <span class="edu-badge done">Completed</span>
+        </div>
+      </div>
+      <div class="edu-spacer"></div>
+      <div class="edu-spacer"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="page-section" id="contact">
+  <div class="eyebrow">Contact</div>
+  <h2 class="sh">Let's build<br><em>something.</em></h2>
+  <div class="contact-grid">
+    <div class="contact-left">
+      <p>Thank you for visiting my portfolio. If you'd like to discuss a project, explore potential opportunities, or connect professionally,
+        I'd be happy to hear from you.
+        Feel free to reach out through any of these platforms.
+      </p>
+    </div>
+    <div>
+      <a href="mailto:tharindiwelikala27@gmail.com" class="contact-row">
+        <span class="crow-icon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2" y="4" width="16" height="12" rx="2"/><polyline points="2,4 10,11 18,4"/></svg></span>
+        <div><div class="crow-label">Email</div><div class="crow-value">tharindiwelikala27@gmail.com</div></div>
+      </a>
+      <a href="https://github.com/Tharindi-Welikala" target="_blank" class="contact-row">
+        <span class="crow-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"/></svg></span>
+        <div><div class="crow-label">GitHub</div><div class="crow-value">github.com/Tharindi-Welikala</div></div>
+      </a>
+      <a href="https://www.linkedin.com/in/tharindi-welikala" target="_blank" class="contact-row">
+        <span class="crow-icon"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M0 1.44C0 .645.658 0 1.47 0h17.06C19.342 0 20 .645 20 1.44v17.12c0 .795-.658 1.44-1.47 1.44H1.47C.658 20 0 19.355 0 18.56V1.44zM6.179 16.81V7.712H3.177v9.098h3.002zM4.678 6.48a1.56 1.56 0 000 3.12 1.56 1.56 0 000-3.12zM16.811 16.81v-4.96c0-2.65-1.48-3.883-3.454-3.883-1.591 0-2.306.875-2.706 1.49v-1.28H7.649c.04.843 0 9.098 0 9.098h3.002v-5.083c0-.27.02-.54.1-.733.217-.54.711-1.099 1.54-1.099 1.087 0 1.52.83 1.52 2.047v4.868h3.001z"/></svg></span>
+        <div><div class="crow-label">LinkedIn</div><div class="crow-value">linkedin.com/in/tharindi-welikala</div></div>
+      </a>
+      <a href="tel:+94741048779" class="contact-row">
+        <span class="crow-icon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 16.352V17.5A1.5 1.5 0 0116.5 19h-1C6.716 19 1 13.284 1 6.5V5a1.5 1.5 0 011-1.415V3.5z"/></svg></span>
+        <div><div class="crow-label">Phone</div><div class="crow-value">(+94) 74 104 8779</div></div>
+      </a>
+      <div class="contact-row" style="cursor:default">
+        <span class="crow-icon"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M10 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/><path d="M10 1C6.134 1 3 4.134 3 8c0 5.25 7 12 7 12s7-6.75 7-12c0-3.866-3.134-7-7-7z"/></svg></span>
+        <div><div class="crow-label">Location</div><div class="crow-value">Padukka, Colombo, Sri Lanka</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Tharindi Welikala · 2026</p>
+  <p>Padukka, Colombo, Sri Lanka</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
